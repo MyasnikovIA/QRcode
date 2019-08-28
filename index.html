@@ -4,6 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>&lt;qr-code&gt;</title>
+	<!----- Если IE необходимо подключить библиотеки------>
+	<!--
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/shadydom/1.1.0/shadydom.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.2.4/custom-elements.min.js"></script>
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+     -->
+	<script src="Lib/babel.min.js"></script>
+	<script src="Lib/shadydom.min.js"></script>
+	<script src="Lib/custom-elements.min.js"></script>
+	<!-- ============================================== -->
+
 	<style>
 		body {
 			background: #eeeeee;
@@ -80,13 +91,13 @@
 	</div>
 	<div>
 	  <br />
-	  <br /><qr-code data="bla bla blaaaaaaaaaahhh" format="svg"></qr-code>
-      <br /><qr-code data="bla bla blaaaaaaaaaahhh" format="html"></qr-code>
+	  <br /> <qr-code data="bla bla blaaaaaaaaaahhh" format="svg"></qr-code>
+      <br /> <qr-code data="bla bla blaaaaaaaaaahhh" format="html"></qr-code>
       <br /> <qr-code data="bla bla blaaaaaaaaaahhh" format="png"></qr-code>
     </div>
 	
 	<!-- Polyfill and Web Component -->
-	<script src="webcomponents-lite.js"></script>
-	<script src="qr-code.js"></script>
+	<script src="Lib/webcomponents-lite.js"></script>
+	<script src="Lib/qr-code.js"></script>
 </body>
 </html>
